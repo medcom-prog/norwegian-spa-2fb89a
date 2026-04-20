@@ -37,6 +37,22 @@ export function SwimPro() {
           </p>
         </motion.div>
 
+        {/* Image — placed BEFORE the two-col on large screens for visual impact */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-12 md:mb-16 rounded-3xl overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1531256436229-b4e3c16d23af?w=1400&q=85&fit=crop"
+            alt="SwimPro motstrømsbasseng — svøm i ditt eget basseng"
+            className="w-full h-56 md:h-80 object-cover object-center"
+            loading="lazy"
+          />
+        </motion.div>
+
         {/* Two-col layout: features + models */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Features */}
@@ -88,24 +104,24 @@ export function SwimPro() {
                 </div>
               </motion.div>
             ))}
+
+            {/* CTA button */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              className="pt-2"
+            >
+              <a
+                href="#kontakt"
+                className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-ocean-900 font-sans font-semibold text-sm px-6 py-3 rounded-full transition-colors shadow-glow"
+              >
+                Avtal prøvebading av SwimPro
+              </a>
+            </motion.div>
           </div>
         </div>
-
-        {/* Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-          className="mt-16 rounded-3xl overflow-hidden"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=1400&q=80&fit=crop"
-            alt="SwimPro motstrømsbasseng"
-            className="w-full h-64 md:h-96 object-cover"
-            loading="lazy"
-          />
-        </motion.div>
       </div>
     </section>
   );

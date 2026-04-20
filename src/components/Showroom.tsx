@@ -35,9 +35,9 @@ export function Showroom() {
             className="rounded-3xl overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&fit=crop"
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=85&fit=crop&crop=center"
               alt="Norwegian Spa utstilling — prøv alle modeller"
-              className="w-full h-72 md:h-[480px] object-cover"
+              className="w-full h-72 md:h-[500px] object-cover"
               loading="lazy"
             />
           </motion.div>
@@ -76,7 +76,7 @@ export function Showroom() {
                   whileHover={{ x: 4 }}
                   className="flex items-start gap-4 p-4 bg-white rounded-xl border border-stone-200 hover:border-gold-300 hover:shadow-soft transition-all group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-gold-50 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-full bg-gold-50 border border-gold-200 flex items-center justify-center shrink-0 mt-0.5">
                     <span className="text-gold-600 text-sm font-mono font-bold">{i + 1}</span>
                   </div>
                   <div>
@@ -86,7 +86,7 @@ export function Showroom() {
                     <p className="font-sans text-xs text-ink-400 mb-0.5">{loc.area}</p>
                     <p className="font-mono text-xs text-stone-400">{loc.hours}</p>
                   </div>
-                  <span className="ml-auto text-stone-300 group-hover:text-gold-400 transition-colors self-center">
+                  <span className="ml-auto text-stone-300 group-hover:text-gold-400 transition-colors self-center text-lg">
                     →
                   </span>
                 </motion.a>

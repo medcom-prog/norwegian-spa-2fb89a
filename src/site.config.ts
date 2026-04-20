@@ -54,7 +54,8 @@ export const site: SiteConfig = {
         'Klorfritt Ag+ renseanlegg',
         '10 års garanti på konstruksjon',
       ],
-      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80',
+      // Warm evening outdoor hot tub
+      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80&fit=crop',
     },
     {
       n: '02',
@@ -66,7 +67,8 @@ export const site: SiteConfig = {
         'Motoflex massasje',
         'CD3 Ozon + flerfarget LED',
       ],
-      image: 'https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=800&q=80',
+      // Outdoor pool / swim spa
+      image: 'https://images.unsplash.com/photo-1531256436229-b4e3c16d23af?w=800&q=80&fit=crop',
     },
     {
       n: '03',
@@ -77,7 +79,8 @@ export const site: SiteConfig = {
         'Passer alle årstider',
         'Helårsbruk',
       ],
-      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80',
+      // Ice bath / cold plunge aesthetic
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80&fit=crop',
     },
     {
       n: '04',
@@ -88,7 +91,8 @@ export const site: SiteConfig = {
         'Rådgivning fra erfarne spesialist',
         'Se alle modeller i full størrelse',
       ],
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+      // Showroom interior
+      image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80&fit=crop',
     },
   ],
   pricing: {

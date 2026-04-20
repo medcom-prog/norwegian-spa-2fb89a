@@ -21,7 +21,7 @@ export function Services() {
           </h2>
         </motion.div>
 
-        {/* Services grid */}
+        {/* Services grid — 2-col with taller photo area */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {site.services.map((svc, i) => (
             <motion.article
@@ -31,11 +31,11 @@ export function Services() {
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
               whileHover={{ y: -4 }}
-              className="relative bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-lifted transition-shadow"
+              className="relative bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-lifted transition-shadow group"
             >
-              {/* Photo */}
+              {/* Photo — taller for impact */}
               {svc.image && (
-                <div className="overflow-hidden h-48">
+                <div className="overflow-hidden h-56 md:h-64">
                   <motion.img
                     whileHover={{ scale: 1.04 }}
                     transition={{ duration: 0.5 }}
